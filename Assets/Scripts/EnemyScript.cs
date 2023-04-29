@@ -17,5 +17,14 @@ public class EnemyScript : MonoBehaviour
     void Update()
     {
         agent.SetDestination(target.position);
+
+        if (moveDirection != Vector2.zero)
+        {
+            transform.up = Vector2.SmoothDamp(transform.up, moveDirection, ref smoothVel, 0.1f, 10);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 }
