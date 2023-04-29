@@ -477,8 +477,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  maxSpeed: 3
-  smoothSpeed: 0.25
+  maxSpeed: 2.5
+  smoothSpeed: 0.2
   player: {fileID: 1583406140}
   destination: {fileID: 890989087}
   wasd: {fileID: 805509953}

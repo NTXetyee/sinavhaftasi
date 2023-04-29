@@ -29,22 +29,27 @@ public class TutorialAnim : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(Vector2.Distance(player.position, destination.position));
         if (Vector2.Distance(player.position, destination.position) < 0.1f)
         {
             wasd.SetActive(true);
             Color color = wasd.GetComponentInChildren<Text>().color;
 
-
-            currentValue = Mathf.SmoothDamp(currentValue, targetValue, ref smoothVel, smoothTime);
-            color = new Color(color.r, color.g, color.b, currentValue);
-            wasd.GetComponentInChildren<Text>().color = color;
-
-
-            foreach (Transform child in children)
+            if (color.a > 0.95f)
             {
-                child.GetComponent<Text>().color = color;
+
             }
+            else
+            {
+                currentValue = Mathf.SmoothDamp(currentValue, targetValue, ref smoothVel, smoothTime);
+                color = new Color(color.r, color.g, color.b, currentValue);
+                wasd.GetComponentInChildren<Text>().color = color;
+
+                foreach (Transform child in children)
+                {
+                    child.GetComponent<Text>().color = color;
+                }
+            }
+
 
         }
         else
