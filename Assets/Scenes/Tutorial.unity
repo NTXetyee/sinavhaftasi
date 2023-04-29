@@ -476,7 +476,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b32fcbe8b6d0d67429f36ddb92035d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
   maxSpeed: 2.5
   smoothSpeed: 0.2
   player: {fileID: 1583406140}
@@ -514,7 +513,7 @@ GameObject:
   - component: {fileID: 1594027513}
   - component: {fileID: 1594027512}
   m_Layer: 5
-  m_Name: Text (Legacy) (3)
+  m_Name: D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -589,6 +588,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2336956691070752528, guid: a6e0a795125151e4c9400375d70e99cf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2336956691070752529, guid: a6e0a795125151e4c9400375d70e99cf, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -651,7 +654,7 @@ GameObject:
   - component: {fileID: 1857083366}
   - component: {fileID: 1857083365}
   m_Layer: 5
-  m_Name: Text (Legacy) (2)
+  m_Name: S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -731,7 +734,7 @@ GameObject:
   - component: {fileID: 2015765745}
   - component: {fileID: 2015765744}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: W
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -811,7 +814,7 @@ GameObject:
   - component: {fileID: 2073623072}
   - component: {fileID: 2073623071}
   m_Layer: 5
-  m_Name: Text (Legacy) (1)
+  m_Name: A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
