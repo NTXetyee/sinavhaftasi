@@ -17,14 +17,13 @@ public class EnemyScript : MonoBehaviour
     void Update()
     {
         agent.SetDestination(target.position);
-
-        if (moveDirection != Vector2.zero)
-        {
-            transform.up = Vector2.SmoothDamp(transform.up, moveDirection, ref smoothVel, 0.1f, 10);
-        }
+        transform.up = - new Vector2(target.position.x, target.position.y) + new Vector2(transform.position.x, transform.position.y); ;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.collider.name == "Player")
+        {
+            GameObject.Find("Manager").GetComponent<Level1Manager>().gameOver = true;
+        }
     }
 }

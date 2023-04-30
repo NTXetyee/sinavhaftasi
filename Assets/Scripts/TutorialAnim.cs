@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class TutorialAnim : MonoBehaviour
 {
     [SerializeField] float maxSpeed, smoothSpeed = 0.25f;
@@ -144,6 +145,6 @@ public class TutorialAnim : MonoBehaviour
     bool congrats;
     void Congrats()
     {
-
+        SceneManager.LoadScene(1);
     }
 }
