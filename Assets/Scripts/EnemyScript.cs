@@ -1,5 +1,6 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class EnemyScript : MonoBehaviour
 {
@@ -23,7 +24,18 @@ public class EnemyScript : MonoBehaviour
     {
         if (collision.collider.name == "Player")
         {
-            GameObject.Find("Manager").GetComponent<Level1Manager>().gameOver = true;
+            if (SceneManager.GetActiveScene().name == "School")
+            {
+                GameObject.Find("Manager").GetComponent<Level2Manager>().gameOver = true;
+            }
+            else if (SceneManager.GetActiveScene().name == "Level3")
+            {
+                //Çalışmalıyım cutscene'i
+            }
+            else
+            {
+                GameObject.Find("Manager").GetComponent<Level1Manager>().gameOver = true;
+            }
         }
     }
 }

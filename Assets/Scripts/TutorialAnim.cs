@@ -145,6 +145,6 @@ public class TutorialAnim : MonoBehaviour
     bool congrats;
     void Congrats()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

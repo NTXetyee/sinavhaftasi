@@ -28,6 +28,6 @@ public class Level1Manager : MonoBehaviour
     }
     void NextLevel()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 }
