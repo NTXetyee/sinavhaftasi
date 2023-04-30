@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quiz.unity
     guid: 41b75e480f09ede4182db1fa844984a9
+  - enabled: 1
+    path: Assets/Scenes/Dayan.unity
+    guid: 84cf763a39fb72747b4c4c18cee87ca6
   m_configObjects: {}
