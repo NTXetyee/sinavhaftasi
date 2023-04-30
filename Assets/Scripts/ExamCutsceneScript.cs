@@ -27,7 +27,7 @@ public class ExamCutsceneScript : MonoBehaviour
             timer += Time.deltaTime;
             if (timer > 12)
             {
-                SceneManager.LoadScene(6);
+                SceneManager.LoadScene(7);
             }
         }
     }

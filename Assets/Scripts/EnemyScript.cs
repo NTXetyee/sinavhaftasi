@@ -30,7 +30,7 @@ public class EnemyScript : MonoBehaviour
             }
             else if (SceneManager.GetActiveScene().name == "Level3")
             {
-                //Çalışmalıyım cutscene'i
+                SceneManager.LoadScene(8);
             }
             else
             {
